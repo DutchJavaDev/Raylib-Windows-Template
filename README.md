@@ -19,9 +19,13 @@ Install Mingw32 if needed via Chocolatey (https://chocolatey.org/install), then 
 Chocolatey will add Mingw32 to system path 
 
 # Run
-Open a powershell terminal in the cloned repo and execute `.\CreateGame.ps1 mygamename`
+Open a powershell terminal in the cloned repo and execute `.\CreateGame.ps1 mygamename` Or right click for the windows option to execute with Powershell
 
-Then run `gcc main.c -o main.exe -O1 -Wall -std=c99 -Wno-miising-braces -I includes/ -L libs/ -lraylib -opengl32 -lgdi32 -lwinmm` to compile the game into a .exe file you can run
+Make some changes
+
+Execute `CompileGame.ps1`
+
+Run `main.exe`
 
 # How it works
 Creates a directory for your game, you can specify the name by running the script like this `.\CreateGame.ps1 mygamename` in a terminal
