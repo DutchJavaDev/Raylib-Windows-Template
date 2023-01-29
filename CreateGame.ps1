@@ -53,7 +53,7 @@ cd $GamePath
 Copy-Item "$($CurrentDirectory)/main.c" main.c
 
 ## Copy compile script
-## Copy-Item "$($CurrentDirectory)/CompileGame.ps1" "$($GamePath)/CompileGame.ps1"
+Copy-Item "$($CurrentDirectory)/CompileGame.ps1" "$($GamePath)/CompileGame.ps1"
 
 cd $GamePath
 
@@ -61,6 +61,6 @@ cd $GamePath
 Remove-Item raylib -Force -Recurse
 
 ## Compile
-## .\CompileGame.ps1
+.\CompileGame.ps1
 
 
