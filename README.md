@@ -1,4 +1,4 @@
-# Raylib-Windows-Template
+# Raylib-Windows-Template (broken ATM)
 A template to create games with raylib on Windows, making it a one click install that can be repeated over and over again.
 
 THIS IS STILL A WORK IN PROGRESS
