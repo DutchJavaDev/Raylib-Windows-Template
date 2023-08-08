@@ -1,11 +1,13 @@
 $RaylibRepo = "https://github.com/raysan5/raylib"
+
 $CurrentDirectory = Get-Item .
+
 $GameName=$args[0]
 
 # Set game name 
 if(!$GameName)
 {
-    $GameName = "MyNewGame"    
+    $GameName = "MyNewGame"
 }
 
 $GamePath = "$($CurrentDirectory)/$($GameName)"
@@ -58,7 +60,10 @@ Copy-Item "$($CurrentDirectory)/CompileGame.ps1" "$($GamePath)/CompileGame.ps1"
 cd $GamePath
 
 ## Delete raylib folder
-Remove-Item raylib -Force -Recurse
+if(Test-Path -Path raylib)
+{
+    Remove-Item raylib -Force -Recurse
+}
 
 ## Compile
 .\CompileGame.ps1
