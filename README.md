@@ -1,4 +1,4 @@
-# Raylib-Windows-Template (broken ATM)
+# Raylib-Windows-Template
 A template to create games with raylib on Windows, making it a one click install that can be repeated over and over again.
 
 THIS IS STILL A WORK IN PROGRESS
@@ -8,15 +8,15 @@ Windows powerShell
 
 Git
 
-Mingw32 
+Mingw32
 
 # Install
-Install Git if needed (https://gitforwindows.org/)
-
 Clone this repository
 
 Install Mingw32 if needed via Chocolatey (https://chocolatey.org/install), then run the command `chocolatey install mingw32` in a powershell terminal
 Chocolatey will add Mingw32 to system path 
+
+Or via installer (https://git-scm.com/download/win)
 
 # Run
 Open a powershell terminal in the cloned repo and execute `.\CreateGame.ps1 mygamename` Or right click for the windows option to execute with Powershell
